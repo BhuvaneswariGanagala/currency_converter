@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;/*now our form become a flex and align in row format */
+    justify-content: center;/* horizontally center of body*/
+    align-items: center; /*vertically center  */
+    min-height:100vh; /*viewport height (the height of the screen).
+    min-height: 100vh; means "Make the element at least as tall as the screen, but allow it to grow if needed."*/
+    background-color:#f4e4ba;
+}
+.container{
+    background-color: #fff;
+    padding:2rem;/*2rem means the padding is 2 times the root font size (<html>).
+    If the default root font size is 16px, then:
+    2rem = 2 × 16px = 32px
+*/
+   border-radius:1rem;
+   min-height:45vh;
+   /*at least 45% of the screen height.*/
+   width:45vh;    
+}
+form{
+    margin:2rem 0 2rem 0;/* top and bottom sey 2 rems */
+}
+form select,button,input{
+    width:100%;/* they occupy select box,input box , bitton box search bar laga length vachesthai */
+    border:none;/*boxes okka broder pothadi */
+    outline:none;/* manam border remove chesina eppudaithe rayadaniki dhanimedha click chesthamo malli aa border anedhi kanipisthundi dhani remove cheyyadaniki */
+    border-radius:0.75rem;
+}
+.dropdown i{
+  font-size: 1.5rem;
+  margin-top:1rem;
+}
+
+form input{
+    border : 1px solid lightgray;
+    font-size:1rem;
+    height:3rem;
+    padding-left:0.5rem;
+}
+.dropdown{
+    display:flex;
+    justify-content: space-between;/* 2 divs madhya space vasthadi */
+    align-items: center;/* anni center align avuthai aa exchange arrow kuda */
+    margin-top:1.15rem;
+}
+img{
+    max-width: 2rem;
+}
+.select_container{
+    display:flex;/* it makes inr and image pakka pakkana */
+    justify-content: center;
+    align-items: center;/* expected shape vachesthadi */
+    width:6rem;/* background-color ichi chusko width kanabaduthundi */
+    border-radius:0.5rem;
+    border:1px solid lightgray;
+
+}
+.select_container select{
+    font-size:1rem;
+    width:auto;
+}
+.msg{
+    margin:2rem 0 2rem 0;
+}
+form button{
+    height:3rem;
+    background-color:#af4d98;
+    color:#fff;
+    font-size:1.15rem;
+    cursor: pointer;
+}
